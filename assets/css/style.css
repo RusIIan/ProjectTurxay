@@ -1,10 +1,18 @@
 /*# sourceMappingURL=style.css.map */
 @import url("https://fonts.googleapis.com/css2?family=Lora&family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Volkhov:ital@0;1&display=swap");
-* {
+*,
+a {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none !important;
+}
+a:hover {
+  color: #409dae !important;
+}
+ul li {
+  list-style: none;
 }
 
 :root {
@@ -36,7 +44,11 @@ body {
   justify-content: space-around;
 }
 /* navbar start */
-.navigation-ab {
+.arrowIcon {
+  font-size: 13px;
+  margin-left: 5px;
+}
+.navigation-head {
   position: absolute;
   top: 100px;
   z-index: 999;
@@ -49,6 +61,11 @@ body {
   color: #555555;
   font-family: var(--ft-font-Robot);
   font-size: 20px;
+}
+.nav-item-text {
+  font-family: var(--ft-font-Robot);
+  font-size: 18px;
+  color: #5e5e5e !important;
 }
 /* dropdown menu start  */
 .homeDropDown,
